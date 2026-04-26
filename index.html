@@ -1,147 +1,185 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mayotte Safari Drive</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #0b1d1b;
-      color: #ffffff;
-    }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mayotte Safari Drive</title>
 
-    header {
-      background: url('https://images.unsplash.com/photo-1500375592092-40eb2168fd21') center/cover no-repeat;
-      height: 70vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      position: relative;
-    }
+<style>
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f5f3ef;
+  color: #1c2b2a;
+}
 
-    header::after {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background: rgba(0,0,0,0.5);
-    }
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background: white;
+}
 
-    header h1 {
-      position: relative;
-      font-size: 3rem;
-      color: #ffd700;
-      letter-spacing: 2px;
-    }
+header h1 {
+  font-size: 24px;
+  color: #1c3d36;
+}
 
-    nav {
-      background: #102b28;
-      display: flex;
-      justify-content: center;
-      padding: 15px;
-      gap: 20px;
-    }
+nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
 
-    nav a {
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-    }
+.hero {
+  position: relative;
+  height: 90vh;
+  background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)), url('https://upload.wikimedia.org/wikipedia/commons/3/3c/Plage_de_N%27Gouja_Mayotte.jpg') center/cover;
+  display: flex;
+  align-items: center;
+  padding: 60px;
+  color: white;
+}
 
-    section {
-      padding: 60px 20px;
-      max-width: 1000px;
-      margin: auto;
-    }
+.hero-text {
+  max-width: 500px;
+}
 
-    h2 {
-      color: #ffd700;
-      margin-bottom: 20px;
-    }
+.hero h2 {
+  font-size: 60px;
+  margin: 0;
+  background: linear-gradient(45deg, #caa85c, #f2d28b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
-    .services {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-    }
+.hero h3 {
+  font-size: 48px;
+  margin: 0;
+  color: #1c3d36;
+}
 
-    .card {
-      background: #143834;
-      padding: 20px;
-      border-radius: 10px;
-    }
+.hero p {
+  margin: 20px 0;
+  color: rgba(255,255,255,0.9);
+  text-shadow: 0 2px 8px rgba(0,0,0,0.6);
+}
 
-    footer {
-      text-align: center;
-      padding: 20px;
-      background: #102b28;
-      margin-top: 40px;
-    }
+.btn {
+  background: #caa85c;
+  padding: 12px 25px;
+  border-radius: 6px;
+  color: white;
+  text-decoration: none;
+}
 
-    .btn {
-      display: inline-block;
-      padding: 10px 20px;
-      background: #ffd700;
-      color: black;
-      text-decoration: none;
-      border-radius: 5px;
-      margin-top: 10px;
-      font-weight: bold;
-    }
-  </style>
+.section {
+  padding: 60px 40px;
+  text-align: center;
+}
+
+.section h2 {
+  color: #caa85c;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.card {
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+  margin-top: 40px;
+}
+
+.gallery img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+footer {
+  background: linear-gradient(45deg, #0f2f2b, #1c3d36);
+  color: white;
+  padding: 40px;
+  text-align: center;
+}
+
+</style>
 </head>
+
 <body>
 
 <header>
   <h1>Mayotte Safari Drive</h1>
+  <nav>
+    <a href="#">Accueil</a>
+    <a href="#">Services</a>
+    <a href="#">Excursions</a>
+    <a href="#">Contact</a>
+  </nav>
 </header>
 
-<nav>
-  <a href="#about">À propos</a>
-  <a href="#services">Services</a>
-  <a href="#contact">Contact</a>
-</nav>
-
-<section id="about">
-  <h2>Bienvenue</h2>
-  <p>
-    Mayotte Safari Drive est une agence réceptive locale spécialisée dans l’immersion authentique à Mayotte.
-    Nous vous accompagnons pour découvrir l’île autrement.
-  </p>
-</section>
-
-<section id="services">
-  <h2>Nos services</h2>
-  <div class="services">
-    <div class="card">
-      <h3>🌿 Immersion locale</h3>
-      <p>Découvrez la culture et les traditions de Mayotte avec des expériences authentiques.</p>
-    </div>
-    <div class="card">
-      <h3>🧭 Guides & excursions</h3>
-      <p>Accompagnement personnalisé pour vos tours, randonnées et aventures.</p>
-    </div>
-    <div class="card">
-      <h3>🚐 Transferts</h3>
-      <p>Navettes, accueil aéroport et transferts hôtels / activités en toute sécurité.</p>
-    </div>
+<section class="hero">
+  <div class="hero-text">
+    <h2>MAYOTTE</h2>
+    <h3>SAFARI DRIVE</h3>
+    <p>L’île aux mille expériences</p>
+    <p>Agence réceptive locale pour des immersions authentiques à Mayotte.</p>
+    <a class="btn" href="#">Découvrir nos services</a>
   </div>
 </section>
 
-<section id="contact">
-  <h2>Contact</h2>
-  <p>Email : contact@mayottesafaridrive.com</p>
-  <p>Téléphone : +262 XXX XXX XXX</p>
-  <a class="btn" href="mailto:contact@mayottesafaridrive.com">Nous écrire</a>
+<section class="section">
+  <h2>NOS MISSIONS</h2>
+  <div class="cards">
+
+    <div class="card">
+      <h3>Agence réceptive locale</h3>
+      <p>Immersion dans la culture mahoraise : villages, traditions, rencontres.</p>
+    </div>
+
+    <div class="card">
+      <h3>Guide & excursions</h3>
+      <p>Découverte du Mont Choungui, randonnée à Saziley, visites culturelles.</p>
+    </div>
+
+    <div class="card">
+      <h3>Transferts & navettes</h3>
+      <p>Accueil aéroport Dzaoudzi, transferts hôtels et plages.</p>
+    </div>
+
+  </div>
+</section>
+
+<section class="section">
+  <h2>DÉCOUVREZ MAYOTTE</h2>
+
+  <div class="gallery">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/0/0c/Mont_Choungui_Mayotte.jpg">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/Lagon_de_Mayotte.jpg">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/5/5a/Ilot_Mbouzi_Mayotte.jpg">
+  </div>
+
+  <p>Lagons, tortues marines, plage de N'Gouja, îlot M'Bouzi, marché de Mamoudzou.</p>
 </section>
 
 <footer>
-  <p>&copy; 2026 Mayotte Safari Drive - Tous droits réservés</p>
+  <p>Mayotte Safari Drive</p>
+  <p>Mamoudzou - Mayotte</p>
+  <p>contact@mayotte-safari-drive.com</p>
 </footer>
 
 </body>
