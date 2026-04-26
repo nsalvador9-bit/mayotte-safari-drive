@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mayotte Safari Drive</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #0b1d1b;
+      color: #ffffff;
+    }
+
+    header {
+      background: url('https://images.unsplash.com/photo-1500375592092-40eb2168fd21') center/cover no-repeat;
+      height: 70vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      position: relative;
+    }
+
+    header::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0,0,0,0.5);
+    }
+
+    header h1 {
+      position: relative;
+      font-size: 3rem;
+      color: #ffd700;
+      letter-spacing: 2px;
+    }
+
+    nav {
+      background: #102b28;
+      display: flex;
+      justify-content: center;
+      padding: 15px;
+      gap: 20px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h2 {
+      color: #ffd700;
+      margin-bottom: 20px;
+    }
+
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #143834;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #102b28;
+      margin-top: 40px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background: #ffd700;
+      color: black;
+      text-decoration: none;
+      border-radius: 5px;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Mayotte Safari Drive</h1>
+</header>
+
+<nav>
+  <a href="#about">À propos</a>
+  <a href="#services">Services</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<section id="about">
+  <h2>Bienvenue</h2>
+  <p>
+    Mayotte Safari Drive est une agence réceptive locale spécialisée dans l’immersion authentique à Mayotte.
+    Nous vous accompagnons pour découvrir l’île autrement.
+  </p>
+</section>
+
+<section id="services">
+  <h2>Nos services</h2>
+  <div class="services">
+    <div class="card">
+      <h3>🌿 Immersion locale</h3>
+      <p>Découvrez la culture et les traditions de Mayotte avec des expériences authentiques.</p>
+    </div>
+    <div class="card">
+      <h3>🧭 Guides & excursions</h3>
+      <p>Accompagnement personnalisé pour vos tours, randonnées et aventures.</p>
+    </div>
+    <div class="card">
+      <h3>🚐 Transferts</h3>
+      <p>Navettes, accueil aéroport et transferts hôtels / activités en toute sécurité.</p>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <p>Email : contact@mayottesafaridrive.com</p>
+  <p>Téléphone : +262 XXX XXX XXX</p>
+  <a class="btn" href="mailto:contact@mayottesafaridrive.com">Nous écrire</a>
+</section>
+
+<footer>
+  <p>&copy; 2026 Mayotte Safari Drive - Tous droits réservés</p>
+</footer>
+
+</body>
+</html>
